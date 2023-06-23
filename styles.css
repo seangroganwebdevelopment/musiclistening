@@ -1,0 +1,124 @@
+@import url();
+
+/* --------------RESEt-------------- */
+
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* outline: 1px solid lime !important; */
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+input,
+button,
+textarea {
+    font: inherit; 
+}
+
+/* || VARIABLES */
+
+:root {
+
+    /* COLOUR PALETTE:  */
+    --COLOR-ONE: #f07575;
+    --COLOR-TWO: #ecc2c2;
+    --COLOR-THREE: #f5d5d5;
+    --COLOR-FOUR: #eca3a3;
+    --COLOR-FIVE: #f7b3b3;
+    --COLOR-SIX: #833434;
+    --COLOR-SEVEN: #333;
+
+
+    --COLOR-TEXT: #4e2020;
+    --COLOR-TEXT2: #fff;
+
+    .dark-mode {
+        --COLOR-ONE: #5a99e2;
+        --COLOR-TWO: #97cceb;
+        --COLOR-THREE: #a3e8f1;
+        --COLOR-FOUR: #a3cbec;
+        --COLOR-FIVE: #c5ebe2;
+        --COLOR-SIX: #7e7cec;
+        --COLOR-SEVEN: #333333;
+    }
+}
+  /* || UTILITY CLASSES */
+
+
+
+
+.generalsection {
+    padding: 20px; 
+    text-align: center;
+}
+
+h2 {
+    margin-bottom: 0.6rem;
+    text-shadow: 2px 2px 2px rgb(167, 144, 144);
+}
+
+
+
+/* ------------------------ */
+
+
+
+
+/* Navbar */
+
+nav {
+    background-color: var(--COLOR-THREE);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2.2rem; 
+}
+
+nav button {
+    border: none;
+    padding: 0.5rem; 
+    border-radius: 1rem;
+    cursor: pointer;
+}
+
+nav button:hover {
+    background-color: var(--COLOR-FOUR);
+    color: white; 
+}
+
+/* Music Scores 1 */
+
+.musicscores1 {
+    background-color: var(--COLOR-ONE);
+    background-image: url('images/score/lorenzo-spoleti-MlhJNEUQpBs-unsplash.jpg');
+    background-size: cover;
+    background-position: top left;
+    position: relative;
+    isolation: isolate;
+    }
+
+.musicscores1::after {
+    content: ''; 
+    position: absolute; 
+    background-size: cover;
+    background-position: top left;
+    z-index: -1;
+    inset: 0; 
+    background-color: var(--COLOR-FIVE);
+    opacity: 0.61;
+}
+
+
+
+.musicscores2 {
+    background-color: var(--COLOR-FOUR);
+  
+}
