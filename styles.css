@@ -5,120 +5,167 @@
 *,
 *::after,
 *::before {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    /* outline: 1px solid lime !important; */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* outline: 1px solid lime !important; */
 }
 
 img {
-    display: block;
-    max-width: 100%;
-    height: auto;
+  display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 input,
 button,
 textarea {
-    font: inherit; 
+  font: inherit;
 }
 
 /* || VARIABLES */
 
 :root {
+  /* COLOUR PALETTE:  */
+  --COLOR-ONE: #f07575;
+  --COLOR-TWO: #ecc2c2;
+  --COLOR-THREE: #f5d5d5;
+  --COLOR-FOUR: #eca3a3;
+  --COLOR-FIVE: #f7b3b3;
+  --COLOR-SIX: #833434;
+  --COLOR-SEVEN: #333;
 
-    /* COLOUR PALETTE:  */
-    --COLOR-ONE: #f07575;
-    --COLOR-TWO: #ecc2c2;
-    --COLOR-THREE: #f5d5d5;
-    --COLOR-FOUR: #eca3a3;
-    --COLOR-FIVE: #f7b3b3;
-    --COLOR-SIX: #833434;
-    --COLOR-SEVEN: #333;
+  --COLOR-TEXT: #4e2020;
+  --COLOR-TEXT2: #fff;
 
-
-    --COLOR-TEXT: #4e2020;
-    --COLOR-TEXT2: #fff;
-
-    .dark-mode {
-        --COLOR-ONE: #5a99e2;
-        --COLOR-TWO: #97cceb;
-        --COLOR-THREE: #a3e8f1;
-        --COLOR-FOUR: #a3cbec;
-        --COLOR-FIVE: #c5ebe2;
-        --COLOR-SIX: #7e7cec;
-        --COLOR-SEVEN: #333333;
-    }
+  .dark-mode {
+    --COLOR-ONE: #5a99e2;
+    --COLOR-TWO: #97cceb;
+    --COLOR-THREE: #a3e8f1;
+    --COLOR-FOUR: #a3cbec;
+    --COLOR-FIVE: #c5ebe2;
+    --COLOR-SIX: #7e7cec;
+    --COLOR-SEVEN: #333333;
+  }
 }
-  /* || UTILITY CLASSES */
-
-
-
+/* || UTILITY CLASSES */
 
 .generalsection {
-    padding: 20px; 
-    text-align: center;
+  padding: 20px;
+  text-align: center;
 }
 
 h2 {
-    margin-bottom: 0.6rem;
-    text-shadow: 2px 2px 2px rgb(167, 144, 144);
+  margin-bottom: 0.6rem;
+  text-shadow: 2px 2px 2px rgb(167, 144, 144);
 }
 
+
+@media screen and (min-width: 600px) {
+    .generalsection {
+        display: flex; 
+        justify-content: space-around;
+        
+    }
+
+    .generalsectionimg {
+        width: 40%; 
+        opacity: 1;
+        border-radius: 10px;
+        
+    }
+}
 
 
 /* ------------------------ */
 
-
-
-
 /* Navbar */
 
 nav {
-    background-color: var(--COLOR-THREE);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1rem 2.2rem; 
+  background-color: var(--COLOR-THREE);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2.2rem;
 }
 
 nav button {
-    border: none;
-    padding: 0.5rem; 
-    border-radius: 1rem;
-    cursor: pointer;
+  border: none;
+  padding: 0.5rem;
+  border-radius: 1rem;
+  cursor: pointer;
 }
 
 nav button:hover {
-    background-color: var(--COLOR-FOUR);
-    color: white; 
+  background-color: var(--COLOR-FOUR);
+  color: white;
 }
 
 /* Music Scores 1 */
 
 .musicscores1 {
-    background-color: var(--COLOR-ONE);
-    background-image: url('images/score/lorenzo-spoleti-MlhJNEUQpBs-unsplash.jpg');
-    background-size: cover;
-    background-position: top left;
-    position: relative;
-    isolation: isolate;
-    }
+  background-color: var(--COLOR-ONE);
+  background-image: url("images/score/lorenzo-spoleti-MlhJNEUQpBs-unsplash.jpg");
+  background-size: cover;
+  background-position: top left;
+  position: relative;
+  isolation: isolate;
+}
 
 .musicscores1::after {
-    content: ''; 
-    position: absolute; 
-    background-size: cover;
-    background-position: top left;
-    z-index: -1;
-    inset: 0; 
-    background-color: var(--COLOR-FIVE);
-    opacity: 0.61;
+  content: "";
+  position: absolute;
+  background-size: cover;
+  background-position: top left;
+  z-index: -1;
+  inset: 0;
+  background-color: var(--COLOR-FIVE);
+  opacity: 0.61;
+}
+
+/* .musicscores1 p:hover {
+    color: var(--COLOR-TWO);
+} */
+
+.musicscores1 img {
+    display: none; 
+}
+
+@media screen and (min-width: 600px) {
+    .musicscores1 img {
+        display: block; 
+    }
 }
 
 
 
+/* Music Scores 2 */
+
 .musicscores2 {
-    background-color: var(--COLOR-FOUR);
-  
+  background-color: var(--COLOR-FOUR);
+  background-image: url(images/sea/james-eades-RVX2STx44UI-unsplash.jpg);
+  background-size: 80% 70%;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  position: relative;
+  isolation: isolate;
+}
+
+.musicscores2::after {
+  content: "";
+  position: absolute;
+  background-size: 80% 70%;
+  background-repeat: no-repeat;
+  background-position: center;
+  z-index: -1;
+  inset: 0;
+  background-color: var(--COLOR-THREE);
+  opacity: 0.86;
+}
+
+/* Music Scores 3 */
+
+.musicscores3 {
+  background-color: var(--COLOR-ONE);
 }
