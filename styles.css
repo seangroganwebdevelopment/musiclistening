@@ -174,16 +174,16 @@ nav button:hover {
 
 .medieval {
     background-color: var(--COLOR-FIVE);
-
+}
 /* Renaissance  */
 
 .renaissance {
-    background-color: var(--COLOR-THREE);
+    background-color: red;
 }
 
 /* Baroque  */
 
-}
+
 .baroque {
     background-color: var(--COLOR-TWO);
 }
