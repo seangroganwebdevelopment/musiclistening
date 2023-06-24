@@ -169,3 +169,22 @@ nav button:hover {
 .musicscores3 {
   background-color: var(--COLOR-ONE);
 }
+
+/* Medieval */
+
+.medieval {
+    background-color: var(--COLOR-FIVE);
+
+/* Renaissance  */
+
+.renaissance {
+    background-color: var(--COLOR-THREE);
+}
+
+/* Baroque  */
+
+}
+.baroque {
+    background-color: var(--COLOR-TWO);
+}
+
