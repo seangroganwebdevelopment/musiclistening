@@ -47,6 +47,16 @@ textarea {
     --COLOR-SIX: #7e7cec;
     --COLOR-SEVEN: #333333;
   }
+
+  .green-mode {
+    --COLOR-ONE: #80e25a;
+    --COLOR-TWO: #44865d;
+    --COLOR-THREE: #79b47e;
+    --COLOR-FOUR: #17e44b;
+    --COLOR-FIVE: #58975b;
+    --COLOR-SIX: #6ac57e;
+    --COLOR-SEVEN: #17a71e;
+  }
 }
 /* || UTILITY CLASSES */
 
@@ -178,7 +188,7 @@ nav button:hover {
 /* Renaissance  */
 
 .renaissance {
-    background-color: red;
+    background-color: var(--COLOR-ONE);
 }
 
 /* Baroque  */
@@ -186,5 +196,9 @@ nav button:hover {
 
 .baroque {
     background-color: var(--COLOR-TWO);
+}
+
+.classical {
+  background-color: var(--COLOR-THREE);
 }
 
