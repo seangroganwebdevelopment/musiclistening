@@ -198,7 +198,29 @@ nav button:hover {
     background-color: var(--COLOR-TWO);
 }
 
+/* Classical  */
+
 .classical {
   background-color: var(--COLOR-THREE);
 }
+
+
+.romantic {
+  background-color: var(--COLOR-FIVE);
+}
+
+
+.lateromantic {
+  background-color: var(--COLOR-THREE);
+}
+
+.modern {
+  background-color: var(--COLOR-TWO);
+}
+
+.contemporary {
+  background-color: var(--COLOR-SIX);
+}
+
+
 
