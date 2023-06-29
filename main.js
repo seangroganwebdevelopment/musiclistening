@@ -16,6 +16,19 @@ colorButton2.addEventListener('click', () => {
 });
 
 
+// hide music in lists ------`
+
+
+const toggleButtons = document.querySelectorAll('.toggle-button');
+
+toggleButtons.forEach(function(button) {
+  button.addEventListener('click', function() {
+    const section = this.nextElementSibling;
+    const isHidden = section.style.display === 'block';
+    section.style.display = isHidden ? 'none': 'block';
+  });
+});
+
 
 // Assigning random colors to different sections of website/
 
@@ -41,5 +54,28 @@ colorButton2.addEventListener('click', () => {
 // }
 
 // ----------
+
+
+// const toggleButton = document.getElementById('toggle-button');
+// const hiddenSection = document.getElementById('hidden-section');
+
+// toggleButton.addEventListener('click', function() {
+//   hiddenSection.style.display = (hiddenSection.style.display === 'none') ? 'block' : 'none';
+// });
+
+// css/
+
+// #hidden-section {
+//   display: none;
+// }
+
+// html 
+
+// <button id="toggle-button">Toggle Section</button>
+// <div id="hidden-section">
+//   <!-- Content to be hidden -->
+// </div>
+
+
 
 
