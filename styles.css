@@ -37,27 +37,28 @@ textarea {
 
   --COLOR-TEXT: #4e2020;
   --COLOR-TEXT2: #fff;
-
-  .dark-mode {
-    --COLOR-ONE: #5a99e2;
-    --COLOR-TWO: #97cceb;
-    --COLOR-THREE: #a3e8f1;
-    --COLOR-FOUR: #a3cbec;
-    --COLOR-FIVE: #c5ebe2;
-    --COLOR-SIX: #7e7cec;
-    --COLOR-SEVEN: #333333;
-  }
-
-  .green-mode {
-    --COLOR-ONE: #80e25a;
-    --COLOR-TWO: #44865d;
-    --COLOR-THREE: #79b47e;
-    --COLOR-FOUR: #17e44b;
-    --COLOR-FIVE: #58975b;
-    --COLOR-SIX: #6ac57e;
-    --COLOR-SEVEN: #17a71e;
-  }
 }
+
+.dark-mode {
+  --COLOR-ONE: #5a99e2;
+  --COLOR-TWO: #97cceb;
+  --COLOR-THREE: #a3e8f1;
+  --COLOR-FOUR: #a3cbec;
+  --COLOR-FIVE: #c5ebe2;
+  --COLOR-SIX: #7e7cec;
+  --COLOR-SEVEN: #333333;
+}
+
+.green-mode {
+  --COLOR-ONE: #80e25a;
+  --COLOR-TWO: #44865d;
+  --COLOR-THREE: #79b47e;
+  --COLOR-FOUR: #17e44b;
+  --COLOR-FIVE: #58975b;
+  --COLOR-SIX: #6ac57e;
+  --COLOR-SEVEN: #17a71e;
+}
+
 
 /* || UTILITY CLASSES */
 
@@ -178,7 +179,6 @@ nav button:hover {
 }
 
 
-
 /* MUSIC SCORES 2 */
 
 .musicscores2 {
@@ -210,19 +210,44 @@ nav button:hover {
   background-color: var(--COLOR-ONE);
 }
 
-VIOLIN PHOTO
+/* VIOLIN PHOTO SECTIOn  */
+
+.violinphotodiv {
+  background-image: linear-gradient(to top, var(--COLOR-FIVE), var(--COLOR-ONE));
+  text-align: center;
+  padding: 2rem 0; 
+   
+  border-top: 1px solid var(--COLOR-SIX); 
+  border-bottom: 1px solid var(--COLOR-SIX); 
+  
+ 
+}
+
 
 .violinphoto {
-  background-image: linear-gradient(right, var(--COLOR-FIVE), var(--COLOR-SEVEN));
+  
   opacity: 0.91;
   width: 80%;
   margin-left: auto;
   margin-right: auto;
+  /* margin-bottom: 0; */
+  box-shadow: 2px 2px 2px var(--COLOR-SIX);
+  border-radius: 0.5rem;
+  
 }
 
 .violinphoto:hover {
   opacity: 1;
 }
+
+@media screen and (min-width: 600px) {
+  .violinphoto {
+    max-height: 40vh; 
+    width: auto; 
+  }
+  
+}
+
 
 /* Medieval */
 
