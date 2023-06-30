@@ -58,6 +58,7 @@ textarea {
     --COLOR-SEVEN: #17a71e;
   }
 }
+
 /* || UTILITY CLASSES */
 
 
@@ -78,44 +79,44 @@ h2 {
 
 .toggle-button {
   /* max-height: 10px;  */
-  padding: 1.2rem; 
+  padding: 1.2rem;
   margin-bottom: 1rem;
-  margin-top: 1rem; 
-  border-radius: 10%; 
+  margin-top: 1rem;
+  border-radius: 10%;
   background-color: var(--COLOR-SIX);
   font-size: 1.2rem;
-  color: white; 
+  color: white;
   cursor: pointer;
-  border: none; 
+  border: none;
   box-shadow: 2px 2px 2px var(--COLOR-ONE);
 }
 
 .toggle-button:hover {
-  padding: 1.4rem; 
+  padding: 1.4rem;
   /* background-color: ; */
-  font-size: 1.4rem; 
+  font-size: 1.4rem;
 }
 
 
 @media screen and (min-width: 600px) {
-    .generalsection {
-        display: flex; 
-        justify-content: space-around;
-        
-    }
+  .generalsection {
+    display: flex;
+    justify-content: space-around;
 
-    .generalsectionimg {
-        width: 40%; 
-        opacity: 1;
-        border-radius: 10px;
-        
-    }
+  }
+
+  .generalsectionimg {
+    width: 40%;
+    opacity: 1;
+    border-radius: 10px;
+
+  }
 }
 
 
 /* ------------------------ */
 
-/* Navbar */
+/* NAVBAR */
 
 nav {
   background-color: var(--COLOR-THREE);
@@ -125,13 +126,14 @@ nav {
   padding: 1rem 2.2rem;
 }
 
-#colorButton1, #colorButton2 {
+#colorButton1,
+#colorButton2 {
   border: none;
   padding: 0.5rem;
   border-radius: 1rem;
   cursor: pointer;
   background-color: var(--COLOR-SIX);
-  color: white; 
+  color: white;
 }
 
 nav button:hover {
@@ -139,7 +141,7 @@ nav button:hover {
   color: white;
 }
 
-/* Music Scores 1 */
+/* MUSIC SCORES 1 */
 
 .musicscores1 {
   background-color: var(--COLOR-ONE);
@@ -166,18 +168,18 @@ nav button:hover {
 } */
 
 .musicscores1 img {
-    display: none; 
+  display: none;
 }
 
 @media screen and (min-width: 600px) {
-    .musicscores1 img {
-        display: block; 
-    }
+  .musicscores1 img {
+    display: block;
+  }
 }
 
 
 
-/* Music Scores 2 */
+/* MUSIC SCORES 2 */
 
 .musicscores2 {
   background-color: var(--COLOR-FOUR);
@@ -202,28 +204,43 @@ nav button:hover {
   opacity: 0.86;
 }
 
-/* Music Scores 3 */
+/* MUSIC SCORES 3 */
 
 .musicscores3 {
   background-color: var(--COLOR-ONE);
 }
 
+VIOLIN PHOTO
+
+.violinphoto {
+  background-image: linear-gradient(right, var(--COLOR-FIVE), var(--COLOR-SEVEN));
+  opacity: 0.91;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.violinphoto:hover {
+  opacity: 1;
+}
+
 /* Medieval */
 
 .medieval {
-    background-color: var(--COLOR-FIVE);
+  background-color: var(--COLOR-FIVE);
 }
+
 /* Renaissance  */
 
 .renaissance {
-    background-color: var(--COLOR-ONE);
+  background-color: var(--COLOR-ONE);
 }
 
 /* Baroque  */
 
 
 .baroque {
-    background-color: var(--COLOR-TWO);
+  background-color: var(--COLOR-TWO);
 }
 
 /* .baroque-buttons {
@@ -253,12 +270,9 @@ nav button:hover {
 
 .contemporary {
   background-color: var(--COLOR-SEVEN);
-  color: white; 
+  color: white;
 }
 
 .popularmusic {
-background-color: var(--COLOR-FIVE);
+  background-color: var(--COLOR-FIVE);
 }
-
-
-
