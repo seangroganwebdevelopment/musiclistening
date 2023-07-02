@@ -131,7 +131,7 @@ nav {
 #colorButton1,
 #colorButton2 {
   border: none;
-  padding: 0.5rem;
+  padding: 0.4rem;
   border-radius: 1rem;
   cursor: pointer;
   background-color: var(--COLOR-SIX);
@@ -269,10 +269,14 @@ nav button:hover {
   background-color: var(--COLOR-TWO);
 }
 
-/* .baroque-buttons {
+#colorButton2 {
+  padding: 0.2rem; 
+}
+
+.baroquebtns {
   display: flex;
   justify-content: space-around;
-} */
+}
 
 /* Classical  */
 
