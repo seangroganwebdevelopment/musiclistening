@@ -120,10 +120,12 @@ h2 {
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
+
+    min-height: 100vh; 
   }
 
   .hidden-section {
-    display: block !important;
+    display: block;
   }
 
   .musicscores1 button,
@@ -137,6 +139,7 @@ h2 {
 @media screen and (min-width: 768px) {
   .generalsection {
     flex-direction: row;
+    
   }
 
   .show-text {
@@ -201,6 +204,8 @@ nav button:hover {
 
 .ms1img {
   display: none;
+  border-radius: 1rem; 
+  box-shadow: 4px 4px 2px var(--COLOR-THREE);
 }
 
 @media screen and (min-width: 600px) {
@@ -251,6 +256,12 @@ nav button:hover {
   opacity: 0.9;
 }
 
+.ms2img {
+  display: none;
+  border-radius: 1rem; 
+  box-shadow: 4px 4px 2px var(--COLOR-THREE);
+}
+
 @media screen and (min-width: 768px) {
   .ms2img {
     display: block;
@@ -268,13 +279,121 @@ nav button:hover {
 
 .musicscores3 {
   background-color: var(--COLOR-ONE);
+  background-image: url(images/score/score2.jpg);
+  /* background-size: 80% 70%; */
+  background-repeat: no-repeat;
+  background-position: center;
+
+  position: relative;
+  isolation: isolate;
+}
+
+.musicscores3::after {
+  content: "";
+  position: absolute;
+  /* background-size: 80% 70%; */
+  background-repeat: no-repeat;
+  background-position: center;
+  z-index: -1;
+  inset: 0;
+  background-color: var(--COLOR-THREE);
+  opacity: 0.79;
+}
+
+
+
+.ms3img {
+  display: none;
+  border-radius: 1rem; 
+  box-shadow: 4px 4px 2px var(--COLOR-THREE);
+}
+
+@media screen and (min-width: 600px) {
+  .musicscores1 .hidden-section {
+    display: block
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .musicscores3 {
+    min-height: 150vh;
+  }
+
+  .ms3img {
+    display: block;
+    width: 30%;
+    height: 240px;
+  }
+
+  .ms3flexover768 {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+/* MUSIC SCORES 4 */
+
+.musicscores4 {
+  background-color: var(--COLOR-SEVEN);
+  background-image: url(images/sea/sea1.jpg);
+  /* background-size: 80% 70%; */
+  background-repeat: no-repeat;
+  background-position: center;
+
+  position: relative;
+  isolation: isolate;
+}
+
+.musicscores4::after {
+  content: "";
+  position: absolute;
+  /* background-size: 80% 70%; */
+  background-repeat: no-repeat;
+  background-position: center;
+  z-index: -1;
+  inset: 0;
+  background-color: var(--COLOR-THREE);
+  opacity: 0.79;
+}
+
+.ms4img {
+  display: none;
+  border-radius: 1rem; 
+  box-shadow: 4px 4px 2px var(--COLOR-THREE);
+}
+
+@media screen and (min-width: 600px) {
+  .musicscores1 .hidden-section {
+    display: block
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .musicscores4 {
+    min-height: 150vh;
+  }
+
+  .ms4img {
+    display: block;
+    width: 30%;
+    height: 240px;
+  }
+
+  .ms4flexover768 {
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 /* MUSIC SCORES GENERAL ||| */
 
+.msimg {
+  border-radius: 10rem;
+}
+
 @media screen and (min-width: 768px) {
   .musicscores {
-    height: 100vh;
+    min-height: 100vh;
   }
 
 }
@@ -288,15 +407,12 @@ nav button:hover {
 
   border-top: 1px solid var(--COLOR-SIX);
   border-bottom: 1px solid var(--COLOR-SIX);
-
-
-}
-
+  }
 
 .violinphoto {
 
-  opacity: 0.91;
-  width: 80%;
+  opacity: 0.81;
+  width: 45%;
   margin-left: auto;
   margin-right: auto;
   /* margin-bottom: 0; */
@@ -314,15 +430,22 @@ nav button:hover {
     max-height: 40vh;
     width: auto;
   }
-
 }
 
-
-/* Medieval */
+/* |||| Medieval |||| */
 
 .medieval {
   background-color: var(--COLOR-FIVE);
 }
+
+@media screen and (min-width: 600px) {
+   .hidden-section1 {
+    display: none; 
+  }
+  
+}
+
+
 
 /* Renaissance  */
 
