@@ -30,6 +30,21 @@ toggleButtons.forEach(function(button) {
 });
 
 
+// Make sure text displays above 600px
+
+window.addEventListener('resize', function() {
+  var screenWidth = window.innerWidth || document.documentElement.clientWidth;
+  var textElement = document.querySelector('.hidden-section');
+
+  if (screenWidth > 600) {
+    textElement.classList.add('show-text');
+  } else {
+    textElement.classList.remove('show-text');
+  }
+});
+
+
+
 // Assigning random colors to different sections of website/
 
 

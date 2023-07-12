@@ -1,5 +1,6 @@
-@import url();
-
+@import url('https://fonts.googleapis.com/css2?family=Mynerve&family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Yuji+Boku&display=swap');
 /* --------------RESEt-------------- */
 
 *,
@@ -59,20 +60,33 @@ textarea {
   --COLOR-SEVEN: #17a71e;
 }
 
+/* --- FONT PALETTE |||  */
+
+:root {
+  --FONT-ONE: Arial, sans-serif;
+  --FONT-TWO: 'Times New Roman', serif;
+  --FONT-THREE: 'Mynerve', cursive;
+  --FONT-FOUR: 'Merriweather', serif;
+  --FONT-FIVE: 'Yuji Boku', serif;
+}
+
 
 /* || UTILITY CLASSES */
 
-
+body {
+  font-family: var(--FONT-FOUR);
+}
 
 .generalsection {
   padding: 20px;
   text-align: center;
-  
+
 }
 
 h2 {
   margin-bottom: 0.6rem;
   text-shadow: 2px 2px 2px rgb(167, 144, 144);
+  font-family: var(--FONT-THREE);
 }
 
 .hidden-section {
@@ -103,15 +117,30 @@ h2 {
 @media screen and (min-width: 600px) {
   .generalsection {
     display: flex;
+    flex-direction: column;
     justify-content: space-around;
-
+    align-items: center;
   }
 
-  .generalsectionimg {
-    width: 40%;
-    opacity: 1;
-    border-radius: 10px;
+  .hidden-section {
+    display: block !important;
+  }
 
+  .musicscores1 button,
+  .musicscores2 button,
+  .musicscores3 button,
+  .musicscores4 button {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .generalsection {
+    flex-direction: row;
+  }
+
+  .show-text {
+    display: block;
   }
 }
 
@@ -143,11 +172,12 @@ nav button:hover {
   color: white;
 }
 
-/* MUSIC SCORES 1 */
+/* ||| MUSIC SCORES 1 ||| */
+
 
 .musicscores1 {
   background-color: var(--COLOR-ONE);
-  background-image: url("images/score/lorenzo-spoleti-MlhJNEUQpBs-unsplash.jpg");
+  background-image: url("images/score/weston-m-3pCRW_JRKM8-unsplash.jpg");
   background-size: cover;
   background-position: top left;
   position: relative;
@@ -162,22 +192,38 @@ nav button:hover {
   z-index: -1;
   inset: 0;
   background-color: var(--COLOR-FIVE);
-  opacity: 0.61;
+  opacity: 0.91;
 }
 
 /* .musicscores1 p:hover {
     color: var(--COLOR-TWO);
 } */
 
-.musicscores1 img {
+.ms1img {
   display: none;
 }
 
 @media screen and (min-width: 600px) {
-  .musicscores1 img {
+
+  .musicscores1 .hidden-section {
+    display: block
+  }
+
+}
+
+@media screen and (min-width: 768px) {
+  .ms1img {
     display: block;
+    width: 30%;
+    height: 240px;
+  }
+
+  .ms1flexover768 {
+    display: flex;
+    flex-direction: column;
   }
 }
+
 
 
 /* MUSIC SCORES 2 */
@@ -185,7 +231,7 @@ nav button:hover {
 .musicscores2 {
   background-color: var(--COLOR-FOUR);
   background-image: url(images/sea/james-eades-RVX2STx44UI-unsplash.jpg);
-  background-size: 80% 70%;
+  /* background-size: 80% 70%; */
   background-repeat: no-repeat;
   background-position: center;
 
@@ -202,7 +248,20 @@ nav button:hover {
   z-index: -1;
   inset: 0;
   background-color: var(--COLOR-THREE);
-  opacity: 0.86;
+  opacity: 0.9;
+}
+
+@media screen and (min-width: 768px) {
+  .ms2img {
+    display: block;
+    width: 30%;
+    height: 240px;
+  }
+
+  .ms2flexover768 {
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 /* MUSIC SCORES 3 */
@@ -211,22 +270,31 @@ nav button:hover {
   background-color: var(--COLOR-ONE);
 }
 
+/* MUSIC SCORES GENERAL ||| */
+
+@media screen and (min-width: 768px) {
+  .musicscores {
+    height: 100vh;
+  }
+
+}
+
 /* VIOLIN PHOTO SECTIOn  */
 
 .violinphotodiv {
   background-image: linear-gradient(to top, var(--COLOR-FIVE), var(--COLOR-ONE));
   text-align: center;
-  padding: 2rem 0; 
-   
-  border-top: 1px solid var(--COLOR-SIX); 
-  border-bottom: 1px solid var(--COLOR-SIX); 
-  
- 
+  padding: 2rem 0;
+
+  border-top: 1px solid var(--COLOR-SIX);
+  border-bottom: 1px solid var(--COLOR-SIX);
+
+
 }
 
 
 .violinphoto {
-  
+
   opacity: 0.91;
   width: 80%;
   margin-left: auto;
@@ -234,7 +302,7 @@ nav button:hover {
   /* margin-bottom: 0; */
   box-shadow: 2px 2px 2px var(--COLOR-SIX);
   border-radius: 0.5rem;
-  
+
 }
 
 .violinphoto:hover {
@@ -243,10 +311,10 @@ nav button:hover {
 
 @media screen and (min-width: 600px) {
   .violinphoto {
-    max-height: 40vh; 
-    width: auto; 
+    max-height: 40vh;
+    width: auto;
   }
-  
+
 }
 
 
@@ -270,7 +338,7 @@ nav button:hover {
 }
 
 #colorButton2 {
-  padding: 0.2rem; 
+  padding: 0.2rem;
 }
 
 .baroquebtns {
