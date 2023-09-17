@@ -131,7 +131,8 @@ h2 {
   .musicscores1 button,
   .musicscores2 button,
   .musicscores3 button,
-  .musicscores4 button {
+  .musicscores4 button, 
+  .musicscores5 button {
     display: none;
   }
 }
@@ -384,6 +385,61 @@ nav button:hover {
     flex-direction: column;
   }
 }
+
+/* MUSIC SCORES 5 */
+
+.musicscores5 {
+  background-color: var(--COLOR-SEVEN);
+  background-image: url(images/sea/shifaaz-shamoon-okVXy9tG3KY-unsplash.jpg);
+  /* background-size: 80% 70%; */
+  background-repeat: no-repeat;
+  background-position: center;
+
+  position: relative;
+  isolation: isolate;
+}
+
+.musicscores5::after {
+  content: "";
+  position: absolute;
+  /* background-size: 80% 70%; */
+  background-repeat: no-repeat;
+  background-position: center;
+  z-index: -1;
+  inset: 0;
+  background-color: var(--COLOR-THREE);
+  opacity: 0.69;
+}
+
+.ms5img {
+  display: none;
+  border-radius: 1rem; 
+  box-shadow: 4px 4px 2px var(--COLOR-THREE);
+}
+
+@media screen and (min-width: 600px) {
+  .musicscores1 .hidden-section {
+    display: block
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .musicscores5 {
+    min-height: 150vh;
+  }
+
+  .ms5img {
+    display: block;
+    width: 30%;
+    height: 240px;
+  }
+
+  .ms5flexover768 {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
 
 /* MUSIC SCORES GENERAL ||| */
 
