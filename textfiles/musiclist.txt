@@ -3,16 +3,16 @@ Music Listening Record
 Classical 
 
 Music Scores 1
-1 Beethoven – String Quartet op 18 no 1
-1 Beethoven – Violin Sonata no 1 in D 
+4 Beethoven – String Quartet op 18 no 1
+11 Beethoven – Violin Sonata no 1 in D 
 1 Beethoven – Symphony no 5
-1 Glazunov – String Quartet no 1, op 1
-6 Glazunov – Lyric Poem, op 11
-7 Glazunov – Meditation op 32
+6 Glazunov – String Quartet no 1, op 1
+12 Glazunov – Lyric Poem, op 11
+16 Glazunov – Meditation op 32
 1 Haydn – Theresienmesse
-1 Haydn – Symphony no 45
-1 Haydn – Symphony no 49
-3 Haydn – String Quartet op 33, The Bird
+2 Haydn – Symphony no 45
+2 Haydn – Symphony no 49
+10 Haydn – String Quartet op 33, The Bird
 Haydn – String Quartet op 76, Quinten 
 5 Holst – Japanese Suite, Op 33
 1 Mozart – Symphony no 25
